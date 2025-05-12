@@ -1,0 +1,13 @@
+{
+  "workspaceFolder": "/app",
+  "dockerComposeFile": "compose.yml",
+  "dockerComposeUpArgs": ["--force-recreate"],
+  "service": "devcontainer",
+  "overrideCommand": true,
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-dotnettools.csdevkit", "csharpier.csharpier-vscode", "rangav.vscode-thunder-client"]
+    }
+  },
+  "forwardPorts": [3000]
+}
