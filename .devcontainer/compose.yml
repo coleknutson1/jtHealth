@@ -1,6 +1,6 @@
 services:
   devcontainer:
-    container_name: pyspark-dev-env
+    container_name: jt-health-dev-container
     build: 
       dockerfile: Dockerfile
       context: .

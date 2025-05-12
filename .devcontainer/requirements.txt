@@ -1,4 +1,0 @@
-ipykernel
-pyspark
-duckdb
-pyodbc

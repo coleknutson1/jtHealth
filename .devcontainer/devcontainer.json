@@ -9,5 +9,5 @@
       "extensions": ["ms-dotnettools.csdevkit", "csharpier.csharpier-vscode", "rangav.vscode-thunder-client"]
     }
   },
-  "forwardPorts": [3000]
+  "forwardPorts": [3000,5173]
 }
