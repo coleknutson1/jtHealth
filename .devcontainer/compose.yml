@@ -1,20 +1,22 @@
 services:
   devcontainer:
     container_name: jt-health-dev-container
-    build: 
+    build:
       dockerfile: Dockerfile
       context: .
     volumes:
       - ..:/app
     depends_on:
       - db
-  
+
   api:
     container_name: api
     build:
       dockerfile: Dockerfile
       context: ../api
-    
+    ports:
+      - 8080:8080
+
   db:
     image: mcr.microsoft.com/mssql/server:2022-CU18-ubuntu-22.04
     environment:
