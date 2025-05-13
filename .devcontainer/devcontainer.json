@@ -10,7 +10,8 @@
         "ms-dotnettools.csdevkit",
         "csharpier.csharpier-vscode",
         "rangav.vscode-thunder-client",
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker"
       ]
     }
   },

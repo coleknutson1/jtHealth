@@ -5,9 +5,15 @@ services:
       dockerfile: Dockerfile
       context: .
     volumes:
-      - ../Projects:/app
+      - ..:/app
     depends_on:
       - db
+  
+  api:
+    container_name: api
+    build:
+      dockerfile: Dockerfile
+      context: ../api
     
   db:
     image: mcr.microsoft.com/mssql/server:2022-CU18-ubuntu-22.04
@@ -17,36 +23,6 @@ services:
       - MSSQL_PID=Developer
     ports:
       - 1433:1433
-    # volumes:
-    #   - mssql-data:/var/opt/mssql
-    # networks:
-    #   - dev-network
     restart: always
-    mem_limit: 4g  # Add this line to limit memory to 4GB
-    memswap_limit: 4g # optional, should be equal to mem_limit
-    # healthcheck:
-    #   test: ["CMD", "sqlcmd", "-S", "localhost", "-U", "sa", "-P", "YourStrong@Passw0rd", "-Q", "SELECT 1"]
-    #   interval: 30s
-    #   timeout: 10s
-    #   retries: 5
-    #   start_period: 30s
-    # deploy:
-    #   resources:
-    #     limits:
-    #       cpus: '3'
-    #       memory: 3G
-
-# networks:
-#   dev-network:
-#     driver: bridge
-# volumes:
-#   mssql-data:
-#     driver: local
-#     driver_opts:
-#       type: none
-#       device: /var/opt/mssql
-#       o: bind
-#     labels:
-#       com.docker.compose.project: pyspark-dev-env
-#       com.docker.compose.service: db
-#       com.docker.compose.version: '1.29.2'
+    mem_limit: 4g
+    memswap_limit: 4g
