@@ -1,19 +1,13 @@
 import "./App.css";
-
 function App() {
   return (
     <>
-      <header>
-        <h1>My Site</h1>
-      </header>
-      <nav>
-        <ul>
-          <a href="" className="item"></a>
-          <a href="" className="item"></a>
-          <a href="" className="item"></a>
-          <a href="" className="item"></a>
-        </ul>
-      </nav>
+      <form action={"https://www.google.com"} method="GET">
+        <label htmlFor="choose"></label>
+        <input id="choose" name="i-like" required />
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
     </>
   );
 }

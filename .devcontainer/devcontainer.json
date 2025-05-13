@@ -6,8 +6,16 @@
   "overrideCommand": true,
   "customizations": {
     "vscode": {
-      "extensions": ["ms-dotnettools.csdevkit", "csharpier.csharpier-vscode", "rangav.vscode-thunder-client", "dbaeumer.vscode-eslint"]
+      "extensions": [
+        "ms-dotnettools.csdevkit",
+        "csharpier.csharpier-vscode",
+        "rangav.vscode-thunder-client",
+        "dbaeumer.vscode-eslint"
+      ]
     }
   },
-  "forwardPorts": [3000,5173]
+  "features": {
+    "ghcr.io/devcontainers/features/git": {}
+  },
+  "forwardPorts": [3000, 5173]
 }

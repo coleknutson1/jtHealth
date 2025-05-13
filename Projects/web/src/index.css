@@ -1,1 +1,11 @@
-@import "tailwindcss";
+input:valid {
+  border: 2px dashed green;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
