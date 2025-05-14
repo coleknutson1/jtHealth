@@ -2,12 +2,12 @@ import "./App.css";
 function App() {
   return (
     <>
-      <form action={"https://www.google.com"} method="GET">
-        <label htmlFor="choose"></label>
-        <input id="choose" name="i-like" required />
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
-      </form>
+      <div className="navBar">
+        <div className="parent"><span className="child">This</span></div>
+        <div className="parent"><span className="child">is</span></div>
+        <div className="parent"><span className="child">Cole</span></div>
+        <div className="parent"><span className="child">K</span></div>
+      </div>
     </>
   );
 }

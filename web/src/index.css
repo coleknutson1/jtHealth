@@ -1,11 +1,26 @@
-input:valid {
-  border: 2px dashed green;
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1f2023;
+    color: #dadada;
+  }
 }
 
-input:invalid {
-  border: 2px dashed red;
+.navBar {
+  display: flex;
+  justify-content: center;
 }
 
-input:invalid:required {
-  background-image: linear-gradient(to right, pink, lightgreen);
+.parent {
+  padding: 10px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.child {
+  background-color: white;
+  padding: 15px;
+}
+
+.parent:hover {
+  color: red
 }

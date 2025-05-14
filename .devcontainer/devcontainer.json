@@ -11,7 +11,8 @@
         "csharpier.csharpier-vscode",
         "rangav.vscode-thunder-client",
         "dbaeumer.vscode-eslint",
-        "ms-azuretools.vscode-docker"
+        "ecmel.vscode-html-css",
+        "pucelle.vscode-css-navigation"
       ]
     }
   },
