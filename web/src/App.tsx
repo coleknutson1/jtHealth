@@ -1,15 +1,23 @@
-import "./App.css";
-function App() {
+import './App.css'
+
+function DrawBlock() {
   return (
-    <>
-      <div className="navBar">
-        <div className="parent"><span className="child">This</span></div>
-        <div className="parent"><span className="child">is</span></div>
-        <div className="parent"><span className="child">Cole</span></div>
-        <div className="parent"><span className="child">K</span></div>
-      </div>
-    </>
+    <div className='big-block'></div>
   );
 }
 
-export default App;
+function RedMethod({ children }) {
+  return (
+    <>
+      <div className="set-red">{children}</div>
+    </>
+  )
+}
+
+export default function App() {
+  return (
+    <>
+      <RedMethod> <DrawBlock></DrawBlock> </RedMethod>
+    </>
+  )
+}

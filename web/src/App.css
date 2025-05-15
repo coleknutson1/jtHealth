@@ -1,0 +1,10 @@
+.set-red {
+    background-color: red;
+}
+
+.big-block {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+
+}

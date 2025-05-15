@@ -12,12 +12,14 @@
         "rangav.vscode-thunder-client",
         "dbaeumer.vscode-eslint",
         "ecmel.vscode-html-css",
-        "pucelle.vscode-css-navigation"
+        "pucelle.vscode-css-navigation",
+        "ms-vscode.live-server"
       ]
     }
   },
   "features": {
     "ghcr.io/devcontainers/features/git": {}
   },
-  "forwardPorts": [3000, 5173]
+  "forwardPorts": [3000, 5173],
+  "postStartCommand": "cd web; npm run dev;"
 }
