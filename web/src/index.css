@@ -5,22 +5,18 @@
   }
 }
 
-.navBar {
-  display: flex;
-  justify-content: center;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  box-sizing: border-box;
+
 }
 
-.parent {
-  padding: 10px;
-  margin: auto;
-  justify-content: space-evenly;
-}
-
-.child {
-  background-color: white;
-  padding: 15px;
-}
-
-.parent:hover {
-  color: red
+body {
+  color: var(--black);
+  font-family: Opensans NC, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }

@@ -1,10 +1,48 @@
-.set-red {
-    background-color: red;
+head div {
+    display: flexbox;
 }
 
-.big-block {
-    width: 40px;
-    height: 40px;
-    background-color: white;
+nav {
+    background: linear-gradient(62deg, rgba(27, 168, 224, 1) 0%, rgba(95, 140, 153, 1) 100%);
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
 
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    font-family: monospace;
+    height: 100px;
+}
+
+nav ul.title {
+    margin-right: auto
+}
+
+
+nav ul:hover {
+    cursor: pointer;
+    background-color: #073a92;
+
+    box-shadow: 0px 0px 10px 10px rgba(0, 255, 255, 0.214);
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+}
+
+nav ul.contact-us-button {
+    background-color: rgb(55, 128, 0);
+}
+
+nav ul.contact-us-button:hover {
+    background-color: rgb(10, 128, 0);
+}
+
+body p {
+    color: white
 }

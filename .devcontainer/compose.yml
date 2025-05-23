@@ -6,8 +6,6 @@ services:
       context: .
     volumes:
       - ..:/app
-    depends_on:
-      - db
 
   api:
     container_name: api
@@ -16,15 +14,3 @@ services:
       context: ../api
     ports:
       - 8080:8080
-
-  db:
-    image: mcr.microsoft.com/mssql/server:2022-CU18-ubuntu-22.04
-    environment:
-      - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=YourStrong@Passw0rd
-      - MSSQL_PID=Developer
-    ports:
-      - 1433:1433
-    restart: always
-    mem_limit: 4g
-    memswap_limit: 4g
